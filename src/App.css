@@ -1,8 +1,9 @@
 .container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+ align-items: center; 
+  /* justify-content: center;  */
   flex-direction: column;
+  margin: 50px;
 }
 
 
@@ -18,14 +19,18 @@ td, th {
   padding: 8px;
 }
 
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
 /**Pagination**/
 
 .pagination {
     display: flex;
-    gap: 5px;
+    gap: 40px;
     align-items: center;
-    justify-content: center;
-    margin: 30px ;
+    justify-content: space-between;
+    margin: 50px ;
 }
 
 .pagination button {

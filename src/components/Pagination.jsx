@@ -19,11 +19,14 @@ function Pagination({ totalPages, currentPage, onPageChange }) {
             disabled={currentPage === 1}
             aria-disabled={currentPage === 1}
             aria-label="Go to previous page"
+            className={currentPage == totalPages ? "active" : ""}
         >
             Previous
         </button>
 
-        {pageNumbers.map((number) => (
+        <p>{currentPage} of {totalPages}</p>
+
+        {/* {pageNumbers.map((number) => (
             <button
                 key={number}
                 onClick={() => onPageChange(number)}
@@ -31,13 +34,14 @@ function Pagination({ totalPages, currentPage, onPageChange }) {
             >
                 {number}
             </button>
-        ))}
+        ))} */}
 
         <button
             onClick={() => onPageChange(currentPage + 1)}
             disabled={currentPage === totalPages}
             aria-disabled={currentPage === totalPages}
             aria-label="Go to next page"
+            className={currentPage == totalPages ? "" : "active"}
         >
             Next
         </button>
