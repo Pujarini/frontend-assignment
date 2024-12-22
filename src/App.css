@@ -3,7 +3,7 @@
  align-items: center; 
   /* justify-content: center;  */
   flex-direction: column;
-  margin: 50px;
+  margin: 40px;
 }
 
 
@@ -30,7 +30,7 @@ tr:nth-child(even) {
     gap: 40px;
     align-items: center;
     justify-content: space-between;
-    margin: 50px ;
+    margin-top: 25px ;
 }
 
 .pagination button {
